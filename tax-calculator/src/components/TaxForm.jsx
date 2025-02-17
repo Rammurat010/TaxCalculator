@@ -19,7 +19,7 @@ const TaxForm = ({ setTaxResult }) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/calculate-tax",
+        "http://localhost:3206/calculate-tax",
         formData
       );
       setTaxResult(response.data);
